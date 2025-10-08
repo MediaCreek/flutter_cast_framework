@@ -29,6 +29,10 @@ import io.flutter.plugin.common.MethodChannel.Result
 
 class FlutterCastFrameworkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, DefaultLifecycleObserver {
 
+    companion object {
+        const val TAG = "flutter_cast_framework"
+    }
+
     init {
         ProcessLifecycleOwner.get().lifecycle.addObserver(this)
     }
