@@ -21,7 +21,4 @@ A new flutter plugin project.
 
   s.ios.deployment_target = '10.0'
 
-  # This is to enable build on simulator
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
